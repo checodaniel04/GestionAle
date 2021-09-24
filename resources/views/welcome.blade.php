@@ -73,20 +73,6 @@
         
       </div>
     </div>
-    <body class="antialiased">
-      <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-      @if (Route::has('login'))
-          <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-              @auth
-                  <a href="{{ url('/dashboard') }}" class="text-sm  underline text-white">Dashboard</a>
-              @else
-                  <a href="{{ route('login') }}" class="text-sm underline text-white">Log in</a>
-
-                  
-              @endauth
-          </div>
-      @endif
-
   </nav>
   
       
@@ -110,7 +96,19 @@
 
             <!-- Page Content -->
             <main>
-           
+                <body class="antialiased">
+            <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="text-sm  underline text-white">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm underline text-white">Log in</a>
+
+                        
+                    @endauth
+                </div>
+            @endif
 
             
            
@@ -121,7 +119,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="grid-cols-1" >
                           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAle-Pe%25C3%25B1a-105794511743404&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=331061058733969" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                            
+                          
                         </div>
                         <div>
                              @foreach ($posts as $post)
