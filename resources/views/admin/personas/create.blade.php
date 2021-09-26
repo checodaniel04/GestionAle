@@ -121,7 +121,7 @@
     <div class="row mb-3">
         <div class="col">
             <div class="image-wrapper">
-                <img id="picture" src="https://leslie.sftcontrol.com/storage/post/09.jpg" alt="">
+                <img id="picture" src="https://alejandraregidora.sftcontrol.com/storage/postcr/INE-640x360.jpg" alt="">
             </div>
         
         </div>
