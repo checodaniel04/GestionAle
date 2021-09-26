@@ -127,8 +127,8 @@
         </div>
         <div class="col">
         {!! Form::label('file', 'Foto Credencial de Elector') !!}
-       
-        {!! Form::file('file', ['class'=>'form-control-file', 'accept' => 'image/*','capture'=>'camera']) !!}
+        {!! Form::file('file', ['class'=>'form-control-file', 'accept' => 'image/*']) !!}
+        
         </div>
     </div>
     @error('file')
